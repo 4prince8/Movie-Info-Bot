@@ -13,10 +13,10 @@ To install and run Movie Info Bot, you need:
 
 - A [Telegram bot token]
 
-
-You can install the requirements using pip:
-
-`pip install -r requirements.txt`
+> [!IMPORTANT]
+> You can install the requirements using pip:
+> 
+> `pip install -r requirements.txt`
 
 You can get an OMDb API key from [OMDb API](https://www.omdbapi.com/apikey.aspx). You need to register with your email. Then, you will receive a key in your inbox.
 
