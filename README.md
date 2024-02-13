@@ -39,4 +39,4 @@ Fork the repository and make your changes. You can then submit a pull request fo
 Share your feedback or ideas on how to improve the bot.
 
 ## License
-This project is licensed under the MIT License. Please take a look at the [LICENSE](https://github.com/4prince8/Movie-Info-Bot/blob/main/LICENSE) file for more details.
+THIS PROJECT IS LICENSED UNDER THE MIT LICENSE. PLEASE TAKE A LOOK AT THE [LICENSE](HTTPS://GITHUB.COM/4PRINCE8/MOVIE-INFO-BOT/BLOB/MAIN/LICENSE) FILE FOR MORE DETAILS.
