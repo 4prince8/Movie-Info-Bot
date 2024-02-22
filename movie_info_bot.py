@@ -49,21 +49,12 @@ def movie_details(update: Update, context: CallbackContext) -> None:
             response_data = response.json()
             if response_data['Response'] == 'True':
                 movie_data = response_data
-                response = f"Title: {movie_data['Title']}\n\n"
-                response += f"IMDB rating: {movie_data['imdbRating']}\n\n"
-                response += f"Year: {movie_data['Year']}\n\n"
-                response += f"Released: {movie_data['Released']}\n\n"
-                response += f"Runtime: {movie_data['Runtime']}\n\n"
-                response += f"Genre: {movie_data['Genre']}\n\n"
-                response += f"Director: {movie_data['Director']}\n\n"
-                response += f"Writer: {movie_data['Writer']}\n\n"
-                response += f"Actors: {movie_data['Actors']}\n\n"
-                response += f"Released: {movie_data['Released']}\n\n"
-                response += f"Language: {movie_data['Language']}\n\n"
-                response += f"Country: {movie_data['Country']}\n\n"
-                response += f"Awards: {movie_data['Awards']}\n\n"
-                response += f"Plot: {movie_data['Plot']}\n\n"
-                response += f"Poster: {movie_data['Poster']}\n\n"
+
+                data_list = ['Title', 'imdbRating', 'Year', 'Released', 'Runtime', 'Genre', 'Director', 'Writer', 'Actors', 'Released',
+                              'Language', 'Country', 'Awards', 'Plot', 'Poster']
+                response = ""
+                for item in data_list:
+                    response += f"{item}: {movie_data[item]}\n\n"
 
                 update.message.reply_text(response)
             else:
